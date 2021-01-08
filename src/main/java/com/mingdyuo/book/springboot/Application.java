@@ -1,7 +1,9 @@
 package com.mingdyuo.book.springboot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
+@EnableJpaAuditing //JPA auditing 활성화
 @SpringBootApplication // 얘가 스프링 부트 자동 설정 해줌, 최상단에 써야함
 public class Application { // 프로젝트의 메인 클래스
     public static void main(String[] args){
